@@ -78,7 +78,10 @@ controller.on('rtm_close', function (bot) {
  * Core bot logic goes here!
  */
 // BEGIN EDITING HERE!
-
+controller.hears(['hello', 'hi'],
+    ['direct_mention', 'mention', 'direct_message'],function(bot,message) {
+    bot.reply(message, `hey bud!`);
+});
 
 controller.hears(['time', 'oh shit'],
     ['direct_mention', 'mention', 'direct_message'],function(bot,message) {
