@@ -80,7 +80,7 @@ controller.on('rtm_close', function (bot) {
 // BEGIN EDITING HERE!
 
 
-controller.hears(    ['time', 'oh shit'],
+controller.hears(['time', 'oh shit'],
     ['direct_mention', 'mention', 'direct_message'],function(bot,message) {
     bot.reply(message, `oh shit it\'s ${moment().format("h A")}`);
 });
