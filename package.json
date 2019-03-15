@@ -28,7 +28,6 @@
     "botkit": "0.2.2",
     "botkit-storage-mongo": "^1.0.2",
     "moment": "^2.24.0",
-    "mongodb": "^1.4.39",
-    "ngrok": "^3.1.1"
+    "mongodb": "^1.4.39"
   }
 }
