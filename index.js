@@ -85,7 +85,7 @@ controller.hears(['hello', 'hi'],
 
 controller.hears(['standup'],
     ['direct_mention', 'mention'], function(bot,message) {
-        bot.reply(message, 'ok guys let\`s do standup!')
+        bot.reply(message, 'ok guys let\`s do standup! :darsh:')
 });
 
 controller.hears(['time', 'oh shit'],
