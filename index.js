@@ -14,8 +14,6 @@ function onInstallation(bot, installer) {
             if (err) {
                 console.log(err);
             } else {
-                convo.say('I am a bot that has just joined your team');
-                convo.say('You must now /invite me to a channel so that I can be of use!');
             }
         });
     }
@@ -81,12 +79,10 @@ controller.on('rtm_close', function (bot) {
  */
 // BEGIN EDITING HERE!
 
-controller.on('bot_channel_join', function (bot, message) {
-    bot.reply(message, "I'm here!")
-});
 
-controller.hears('hello', 'direct_message', function (bot, message) {
-    bot.reply(message, 'Hello!');
+controller.hears(    ['time', 'oh shit'],
+    ['direct_mention', 'mention', 'direct_message'],function(bot,message) {
+    bot.reply(message, `oh shit it\'s ${moment().format("h A")}`);
 });
 
 
