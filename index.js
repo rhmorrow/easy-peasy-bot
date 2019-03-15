@@ -83,6 +83,11 @@ controller.hears(['hello', 'hi'],
     bot.reply(message, `hey bud!`);
 });
 
+controller.hears(['standup'],
+    ['direct_mention', 'mention'], function(bot,message) {
+        bot.reply(message, 'ok guys let\`s do standup')
+});
+
 controller.hears(['time', 'oh shit'],
     ['direct_mention', 'mention', 'direct_message'],function(bot,message) {
     bot.reply(message, `oh shit it\'s ${moment().utcOffset("240").format("h A")}`);
