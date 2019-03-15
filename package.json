@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/DEGoodmanWilson/easy-peasy-bot-app#readme",
   "engines": {
-    "node": "5.3.1"
+    "node": "10.15.3"
   },
   "dependencies": {
     "botkit": "0.2.2",
